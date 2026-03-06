@@ -1,0 +1,118 @@
+# UI元素定位器 - 聊天窗口页面
+# 格式：YAML
+# 说明：用于页面自动化测试，定义聊天窗口的各个元素定位符
+# 适配框架：Playwright / Selenium
+
+page_name: "ChatWindowPage"
+description: "智能客服聊天窗口页面元素定位器"
+framework: "playwright"  # playwright / selenium
+
+# 页面元素定位器
+locators:
+  # 消息输入区域
+  input_box:
+    type: "css"
+    value: "textarea[placeholder*='请输入']"
+    description: "消息输入框"
+  
+  send_button:
+    type: "css"
+    value: "button.send-btn"
+    description: "发送按钮"
+  
+  # 消息展示区域
+  message_container:
+    type: "css"
+    value: ".message-list"
+    description: "消息列表容器"
+  
+  user_message:
+    type: "css"
+    value: ".message.user-message"
+    description: "用户发送的消息气泡"
+  
+  bot_message:
+    type: "css"
+    value: ".message.bot-message"
+    description: "机器人回复的消息气泡"
+  
+  # 消息内容
+  message_text:
+    type: "css"
+    value: ".message-content"
+    description: "消息文本内容"
+  
+  message_time:
+    type: "css"
+    value: ".message-time"
+    description: "消息时间戳"
+  
+  # 功能按钮
+  transfer_human_button:
+    type: "css"
+    value: "button.transfer-human"
+    description: "转人工按钮"
+  
+  end_conversation_button:
+    type: "css"
+    value: "button.end-conversation"
+    description: "结束对话按钮"
+  
+  # 评价按钮
+  rating_container:
+    type: "css"
+    value: ".rating-container"
+    description: "评价按钮容器"
+  
+  good_rating:
+    type: "css"
+    value: "button.rating-good"
+    description: "好评按钮"
+  
+  bad_rating:
+    type: "css"
+    value: "button.rating-bad"
+    description: "差评按钮"
+  
+  # 加载状态
+  loading_indicator:
+    type: "css"
+    value: ".loading-spinner"
+    description: "加载中动画"
+  
+  typing_indicator:
+    type: "css"
+    value: ".typing-indicator"
+    description: "正在输入提示"
+  
+  # 连接状态
+  connection_status:
+    type: "css"
+    value: ".connection-status"
+    description: "连接状态显示"
+  
+  # 错误提示
+  error_message:
+    type: "css"
+    value: ".error-toast"
+    description: "错误提示弹窗"
+
+# 快捷操作
+actions:
+  send_message:
+    locator: "input_box"
+    action: "fill"
+    param: "{message}"
+  
+  click_send:
+    locator: "send_button"
+    action: "click"
+  
+  get_latest_bot_message:
+    locator: "bot_message"
+    action: "last"
+  
+  wait_for_bot_response:
+    locator: "bot_message"
+    action: "wait_for_visible"
+    timeout: 30000

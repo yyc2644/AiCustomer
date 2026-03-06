@@ -1,0 +1,15 @@
+{"query": "我想退货", "expected_intent": "refund", "expected_answer": "您好，请问您的订单是什么时候下单的呢？我们可以为您提供7天无理由退货服务。", "language": "zh-CN", "category": "售后服务"}
+{"query": "怎么申请退款", "expected_intent": "refund", "expected_answer": "退款申请可以在【我的订单】-【申请退款】中提交，或者告诉我您的订单号，我来帮您操作。", "language": "zh-CN", "category": "售后服务"}
+{"query": "订单号123456想退货", "expected_intent": "refund_confirm", "expected_answer": "您的订单123456已经确认收货，符合退货条件。请问您是因为什么问题需要退货呢？", "language": "zh-CN", "category": "售后服务"}
+{"query": "我要换成其他颜色", "expected_intent": "exchange", "expected_answer": "您好，请问您想换成什么颜色呢？目前我们有黑色、白色、蓝色三种颜色可选。", "language": "zh-CN", "category": "售后服务"}
+{"query": "这个产品有货吗", "expected_intent": "product_inquiry", "expected_answer": "您好，请问您想了解的是哪款产品？我可以帮您查询库存情况。", "language": "zh-CN", "category": "产品咨询"}
+{"query": "查询订单物流", "expected_intent": "order_tracking", "expected_answer": "请提供您的订单号，我可以帮您查询物流信息。", "language": "zh-CN", "category": "订单查询"}
+{"query": "物流到哪里了", "expected_intent": "order_tracking", "expected_answer": "请提供您的订单号，我来帮您查看物流进度。", "language": "zh-CN", "category": "订单查询"}
+{"query": "密码忘记了怎么办", "expected_intent": "account", "expected_answer": "您可以通过【忘记密码】功能，使用注册邮箱或手机号重置密码。", "language": "zh-CN", "category": "账户问题"}
+{"query": "如何修改收货地址", "expected_intent": "address", "expected_answer": "您可以在【我的地址簿】中修改收货地址，或者在下单时重新填写。", "language": "zh-CN", "category": "配送问题"}
+{"query": "什么时候能送到", "expected_intent": "delivery_time", "expected_answer": "根据您所在的地区，预计送达时间为3-5个工作日。", "language": "zh-CN", "category": "配送问题"}
+{"query": "I want to return my order", "expected_intent": "refund", "expected_answer": "Hello, may I ask when you placed your order? We offer 7-day return service.", "language": "en", "category": "after_sales"}
+{"query": "How can I get a refund", "expected_intent": "refund", "expected_answer": "You can submit a refund request in 【My Orders】- 【Request Refund】, or provide me your order number and I can help you.", "language": "en", "category": "after_sales"}
+{"query": "Where is my package", "expected_intent": "order_tracking", "expected_answer": "Please provide your order number and I can check the logistics information for you.", "language": "en", "category": "order_query"}
+{"query": "I forgot my password", "expected_intent": "account", "expected_answer": "You can use the 【Forgot Password】 feature to reset your password using your registered email or phone number.", "language": "en", "category": "account_issue"}
+{"query": "What colors are available", "expected_intent": "product_inquiry", "expected_answer": "We currently have black, white, and blue colors available. Which one would you prefer?", "language": "en", "category": "product_inquiry"}

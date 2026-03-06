@@ -1,6 +1,7 @@
 # 加载百炼的 API Key 用于调用通义千问大模型
 import os
 from config.load_key import load_key
+from tools.similarity import similarity
 
 load_key()
 print(f'''你配置的 API Key 是：{os.environ["DASHSCOPE_API_KEY"][:5] + "*" * 5}''')
@@ -30,4 +31,5 @@ system_prompt = "你是一个客服用户。 请基于用户输入的内容，�
 
 requests = get_response(user_prompt, system_prompt,temperature=1.8,)
 for chunk in requests:
-    print(chunk,end="")
+    # print(chunk,end="")
+    print("1",chunk,"相似度：", similarity(user_prompt, chunk))

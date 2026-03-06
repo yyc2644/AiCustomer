@@ -256,7 +256,7 @@ class AssertHelper:
         
         if not actual:
             raise AssertError(
-                message=message or f"槽位缺失: 期望 {list(expected.keys())}, 实际 {}",
+                message=message or f"槽位缺失: 期望 {list(expected.keys())}, 实际为空",
                 expected=expected,
                 actual=actual
             )

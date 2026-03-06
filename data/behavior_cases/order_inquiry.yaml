@@ -1,0 +1,42 @@
+# 行为树测试用例 - 订单查询流程
+# 格式：YAML
+# 说明：用于测试用户查询订单物流信息的多轮对话
+
+test_case:
+  name: "订单查询流程"
+  description: "测试用户查询订单物流信息的完整流程"
+  tree_name: "base"
+  language: "zh-CN"
+  initial_node: "greeting"
+  
+  # 对话步骤
+  steps:
+    - step: 1
+      user_input: "帮我查一下订单"
+      expected_intent: "order_inquiry"
+      expected_node: "order_ask_number"
+      expected_slots: {}
+      description: "用户发起订单查询"
+    
+    - step: 2
+      user_input: "订单号 654321"
+      expected_intent: "order_number"
+      expected_node: "order_tracking"
+      expected_slots:
+        order_id: "654321"
+      description: "用户提供订单号"
+    
+    - step: 3
+      user_input: "已经收到了"
+      expected_intent: "received"
+      expected_node: "order_received"
+      expected_slots:
+        order_id: "654321"
+        status: "delivered"
+      description: "用户确认收货"
+
+# 预期测试结果
+expected_result:
+  success: true
+  final_node: "order_received"
+  total_turns: 3

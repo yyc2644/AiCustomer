@@ -1,0 +1,16 @@
+query,expected_intent,expected_answer,language,category
+"我想退货",refund,"您好，请问您的订单是什么时候下单的呢？我们可以为您提供7天无理由退货服务。",zh-CN,售后服务
+"怎么申请退款",refund,"退款申请可以在【我的订单】-【申请退款】中提交，或者告诉我您的订单号，我来帮您操作。",zh-CN,售后服务
+"订单号123456想退货",refund_confirm,"您的订单123456已经确认收货，符合退货条件。请问您是因为什么问题需要退货呢？",zh-CN,售后服务
+"我要换成其他颜色",exchange,"您好，请问您想换成什么颜色呢？目前我们有黑色、白色、蓝色三种颜色可选。",zh-CN,售后服务
+"这个产品有货吗",product_inquiry,"您好，请问您想了解的是哪款产品？我可以帮您查询库存情况。",zh-CN,产品咨询
+"查询订单物流",order_tracking,"请提供您的订单号，我可以帮您查询物流信息。",zh-CN,订单查询
+"物流到哪里了",order_tracking,"请提供您的订单号，我来帮您查看物流进度。",zh-CN,订单查询
+"密码忘记了怎么办",account,"您可以通过【忘记密码】功能，使用注册邮箱或手机号重置密码。",zh-CN,账户问题
+"如何修改收货地址",address,"您可以在【我的地址簿】中修改收货地址，或者在下单时重新填写。",zh-CN,配送问题
+"什么时候能送到",delivery_time,"根据您所在的地区，预计送达时间为3-5个工作日。",zh-CN,配送问题
+"I want to return my order",refund,"Hello, may I ask when you placed your order? We offer 7-day return service.",en,after_sales
+"How can I get a refund",refund,"You can submit a refund request in 【My Orders】- 【Request Refund】, or provide me your order number and I can help you.",en,after_sales
+"Where is my package",order_tracking,"Please provide your order number and I can check the logistics information for you.",en,order_query
+"I forgot my password",account,"You can use the 【Forgot Password】 feature to reset your password using your registered email or phone number.",en,account_issue
+"What colors are available",product_inquiry,"We currently have black, white, and blue colors available. Which one would you prefer?",en,product_inquiry

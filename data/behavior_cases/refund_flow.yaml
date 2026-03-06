@@ -1,0 +1,52 @@
+# 行为树测试用例 - 退货流程
+# 格式：YAML
+# 说明：用于测试多轮对话的状态流转和槽位填充
+
+test_case:
+  name: "退货流程测试"
+  description: "测试用户从发起退货到完成退货申请的全流程"
+  tree_name: "base"
+  language: "zh-CN"
+  initial_node: "greeting"
+  
+  # 对话步骤
+  steps:
+    - step: 1
+      user_input: "我想退货"
+      expected_intent: "refund"
+      expected_node: "refund_start"
+      expected_slots: {}
+      description: "用户发起退货请求"
+    
+    - step: 2
+      user_input: "订单号是 123456"
+      expected_intent: "refund_order"
+      expected_node: "refund_confirm"
+      expected_slots: 
+        order_id: "123456"
+      description: "用户提供订单号，系统确认订单"
+    
+    - step: 3
+      user_input: "质量不好"
+      expected_intent: "refund_reason"
+      expected_node: "refund_reason_confirm"
+      expected_slots:
+        order_id: "123456"
+        reason: "质量不好"
+      description: "用户提供退货原因"
+    
+    - step: 4
+      user_input: "是的"
+      expected_intent: "confirm"
+      expected_node: "refund_success"
+      expected_slots:
+        order_id: "123456"
+        reason: "质量不好"
+        confirmed: true
+      description: "用户确认退货，系统"
+
+# 预期测试结果
+expected_result:
+  success: true
+  final_node: "refund_success"
+  total_turns: 4

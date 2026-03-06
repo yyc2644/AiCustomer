@@ -19,7 +19,7 @@ print(f'''你配置的 API Key 是：{os.environ["DASHSCOPE_API_KEY"][:5]+"*"*5}
 
 print("正在解析文件...")
 # LlamaIndex提供了SimpleDirectoryReader方法，可以直接将指定文件夹中的文件加载为document对象，对应着解析过程
-documents = SimpleDirectoryReader('../tree_docs').load_data()
+documents = SimpleDirectoryReader('../BehaviorTree').load_data()
 
 print("正在创建索引...")
 # from_documents方法包含切片与建立索引步骤

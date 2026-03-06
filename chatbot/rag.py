@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.ERROR)
 from llama_index.llms.openai_like import OpenAILike
 import os
 
-def indexing(document_path="./tree_docs", persist_path="knowledge_base/tree_test"):
+def indexing(document_path="./BehaviorTree", persist_path="knowledge_base/tree_test"):
     """
     建立索引并持久化存储
     参数
@@ -18,7 +18,7 @@ def indexing(document_path="./tree_docs", persist_path="knowledge_base/tree_test
     # 持久化索引，将索引保存为本地文件
     index.storage_context.persist(persist_path)
 
-def create_index(document_path="./tree_docs"):
+def create_index(document_path="./BehaviorTree"):
     """
     建立索引
     参数

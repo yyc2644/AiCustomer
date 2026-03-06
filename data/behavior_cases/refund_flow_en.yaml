@@ -1,0 +1,52 @@
+# Behavior Tree Test Case - Refund Flow (English)
+# Format: YAML
+# Description: Test case for refund process in English
+
+test_case:
+  name: "Refund Flow Test"
+  description: "Test the complete refund process from initiation to application submission"
+  tree_name: "base"
+  language: "en"
+  initial_node: "greeting"
+  
+  # 对话步骤
+  steps:
+    - step: 1
+      user_input: "I want to return my order"
+      expected_intent: "refund"
+      expected_node: "refund_start"
+      expected_slots: {}
+      description: "User initiates refund request"
+    
+    - step: 2
+      user_input: "Order number is 123456"
+      expected_intent: "refund_order"
+      expected_node: "refund_confirm"
+      expected_slots: 
+        order_id: "123456"
+      description: "User provides order number, system confirms"
+    
+    - step: 3
+      user_input: "The quality is not good"
+      expected_intent: "refund_reason"
+      expected_node: "refund_reason_confirm"
+      expected_slots:
+        order_id: "123456"
+        reason: "quality"
+      description: "User provides refund reason"
+    
+    - step: 4
+      user_input: "Yes"
+      expected_intent: "confirm"
+      expected_node: "refund_success"
+      expected_slots:
+        order_id: "123456"
+        reason: "quality"
+        confirmed: true
+      description: "User confirms, system completes refund application"
+
+# 预期测试结果
+expected_result:
+  success: true
+  final_node: "refund_success"
+  total_turns: 4

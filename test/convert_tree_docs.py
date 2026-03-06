@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""将 tree_docs 目录下的 XLS 转换为 JSONL。"""
+"""将 BehaviorTree 目录下的 XLS 转换为 JSONL。"""
 
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ from typing import Iterable, List
 import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parent
-TREE_DOCS_DIR = PROJECT_ROOT / "tree_docs"
+TREE_DOCS_DIR = PROJECT_ROOT / "BehaviorTree"
 DEFAULT_OUTPUT_DIR = TREE_DOCS_DIR / "jsonl"
 
 # 兼容不同命名方式的列名
@@ -78,18 +78,18 @@ def write_jsonl(records: List[dict], output_path: Path) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Convert tree_docs XLS files to JSONL.")
+    parser = argparse.ArgumentParser(description="Convert BehaviorTree XLS files to JSONL.")
     parser.add_argument(
         "--input-dir",
         type=Path,
         default=TREE_DOCS_DIR,
-        help="包含 XLS 的目录，默认 tree_docs。",
+        help="包含 XLS 的目录，默认 BehaviorTree。",
     )
     parser.add_argument(
         "--output-dir",
         type=Path,
         default=DEFAULT_OUTPUT_DIR,
-        help="输出 JSONL 目录，默认 tree_docs/jsonl。",
+        help="输出 JSONL 目录，默认 BehaviorTree/jsonl。",
     )
     args = parser.parse_args()
 

@@ -1,0 +1,130 @@
+# 系统配置文件
+# 用于定义测试阈值、模型参数、行为树配置等
+
+# ============================================
+# NLU 评估阈值配置
+# ============================================
+evaluation:
+  # 意图识别准确率阈值
+  intent:
+    top1_threshold: 0.85        # Top1 意图准确率 >= 85% 才算通过
+    top3_threshold: 0.95        # Top3 意图准确率 >= 95% 才算通过
+  
+  # 答案匹配度阈值
+  answer:
+    similarity_threshold: 0.80  # 语义相似度 >= 80% 才算通过
+    exact_match_bonus: 1.0       # 完全匹配时得分
+  
+  # 槽位填充准确率
+  slot:
+    fill_threshold: 0.90        # 槽位填充准确率 >= 90% 才算通过
+  
+  # 回归测试配置
+  regression:
+    alert_threshold: 0.05       # 准确率下降超过 5% 触发告警
+    critical_threshold: 0.10    # 准确率下降超过 10% 标记为严重
+
+# ============================================
+# 对话模型配置
+# ============================================
+model:
+  # 意图识别模型
+  intent_model:
+    type: "local"               # local / api
+    model_path: "test/v119/model"
+    device: "cpu"
+    batch_size: 32
+  
+  # 向量检索模型
+  embedding_model:
+    type: "local"
+    model_name: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+    dimension: 384
+  
+  # 大语言模型（用于生成答案）
+  llm:
+    type: "api"                 # local / api
+    provider: "ollama"           # ollama / openai / anthropic
+    model_name: "llama3"
+    temperature: 0.7
+    max_tokens: 500
+
+# ============================================
+# 行为树配置
+# ============================================
+behavior_tree:
+  # 行为树文件路径（支持多语言）
+  trees:
+    - name: "base"
+      path: "BehaviorTree/base"
+      languages: ["en", "zh"]
+    - name: "ComeIndia"
+      path: "BehaviorTree/ComeIndia"
+      languages: ["hi", "en", "pt_br"]
+  
+  # 行为树测试配置
+  test:
+    max_turns: 10               # 最大测试轮次
+    timeout: 30                 # 单轮超时时间（秒）
+    enable_node_validation: true  # 是否验证节点跳转
+
+# ============================================
+# 知识库配置
+# ============================================
+knowledge_base:
+  # 知识库存储路径
+  storage:
+    type: "json"                # json / sqlite / vector
+    path: "knowledge_base"
+  
+  # 知识库测试配置
+  test:
+    top_k: 3                    # 召回Top K条结果
+    similarity_threshold: 0.70  # 召回相似度阈值
+
+# ============================================
+# 测试数据配置
+# ============================================
+test_data:
+  # 语料库配置
+  corpus:
+    formats: ["xlsx", "jsonl", "csv"]
+    required_columns:
+      - "query"                 # 用户问题
+      - "expected_intent"       # 预期意图
+      - "expected_answer"      # 预期答案（可选）
+  
+  # 行为树测试用例格式
+  behavior_case:
+    formats: ["yaml", "json"]
+    required_fields:
+      - "name"                 # 用例名称
+      - "steps"               # 对话步骤
+  
+  # UI元素定位器格式
+  ui_locator:
+    formats: ["yaml", "json"]
+    supported_frameworks:
+      - "playwright"
+      - "selenium"
+
+# ============================================
+# 报告配置
+# ============================================
+reports:
+  # 报告输出格式
+  formats:
+    - "html"
+    - "allure"
+    - "json"
+  
+  # 报告路径
+  output:
+    html: "reports/html"
+    allure: "reports/allure"
+    json: "reports/json"
+  
+  # 报告保留策略
+  retention:
+    max_reports: 30            # 最多保留30份报告
+    days_to_keep: 90           # 保留90天

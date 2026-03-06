@@ -1,0 +1,200 @@
+# UI元素定位器 - 客服管理后台
+# 格式：YAML
+# 说明：用于页面自动化测试，定义客服管理后台的元素定位符
+# 适配框架：Playwright / Selenium
+
+page_name: "AdminDashboardPage"
+description: "客服管理后台页面元素定位器"
+framework: "playwright"  # playwright / selenium
+
+# 页面元素定位器
+locators:
+  # 导航菜单
+  nav_menu:
+    type: "css"
+    value: ".nav-menu"
+    description: "导航菜单栏"
+  
+  knowledge_base_menu:
+    type: "xpath"
+    value: "//span[contains(text(),'知识库管理')]"
+    description: "知识库管理菜单"
+  
+  conversation_menu:
+    type: "xpath"
+    value: "//span[contains(text(),'会话记录')]"
+    description: "会话记录菜单"
+  
+  stats_menu:
+    type: "xpath"
+    value: "//span[contains(text(),'数据统计')]"
+    description: "数据统计菜单"
+  
+  # 知识库管理页面
+  add_knowledge_button:
+    type: "css"
+    value: "button.add-knowledge"
+    description: "新增知识按钮"
+  
+  knowledge_title_input:
+    type: "css"
+    value: "input[name='title']"
+    description: "知识标题输入框"
+  
+  knowledge_content_input:
+    type: "css"
+    value: "textarea[name='content']"
+    description: "知识内容输入框"
+  
+  knowledge_category:
+    type: "css"
+    value: "select[name='category']"
+    description: "知识分类下拉框"
+  
+  save_button:
+    type: "css"
+    value: "button.save"
+    description: "保存按钮"
+  
+  cancel_button:
+    type: "css"
+    value: "button.cancel"
+    description: "取消按钮"
+  
+  delete_button:
+    type: "css"
+    value: "button.delete"
+    description: "删除按钮"
+  
+  edit_button:
+    type: "css"
+    value: "button.edit"
+    description: "编辑按钮"
+  
+  # 搜索功能
+  search_input:
+    type: "css"
+    value: "input.search-input"
+    description: "搜索输入框"
+  
+  search_button:
+    type: "css"
+    value: "button.search-btn"
+    description: "搜索按钮"
+  
+  # 表格相关
+  data_table:
+    type: "css"
+    value: ".data-table"
+    description: "数据表格"
+  
+  table_row:
+    type: "css"
+    value: "table tbody tr"
+    description: "表格行"
+  
+  table_cell:
+    type: "css"
+    value: "table tbody td"
+    description: "表格单元格"
+  
+  # 分页
+  pagination:
+    type: "css"
+    value: ".pagination"
+    description: "分页组件"
+  
+  next_page_button:
+    type: "css"
+    value: "button.next-page"
+    description: "下一页按钮"
+  
+  prev_page_button:
+    type: "css"
+    value: "button.prev-page"
+    description: "上一页按钮"
+  
+  # 会话记录
+  conversation_id:
+    type: "css"
+    value: ".conversation-id"
+    description: "会话ID"
+  
+  conversation_status:
+    type: "css"
+    value: ".conversation-status"
+    description: "会话状态"
+  
+  view_conversation:
+    type: "css"
+    value: "button.view-detail"
+    description: "查看详情按钮"
+  
+  # 数据统计
+  stats_chart:
+    type: "css"
+    value: ".stats-chart"
+    description: "统计图表"
+  
+  date_picker:
+    type: "css"
+    value: ".date-picker"
+    description: "日期选择器"
+  
+  export_button:
+    type: "css"
+    value: "button.export"
+    description: "导出按钮"
+  
+  # 提示信息
+  success_toast:
+    type: "css"
+    value: ".toast.success"
+    description: "成功提示"
+  
+  error_toast:
+    type: "css"
+    value: ".toast.error"
+    description: "错误提示"
+  
+  confirm_dialog:
+    type: "css"
+    value: ".confirm-dialog"
+    description: "确认对话框"
+  
+  confirm_yes:
+    type: "css"
+    value: "button.confirm-yes"
+    description: "确认按钮"
+  
+  confirm_no:
+    type: "css"
+    value: "button.confirm-no"
+    description: "取消按钮"
+
+# 快捷操作
+actions:
+  add_knowledge:
+    - locator: "add_knowledge_button"
+      action: "click"
+    - locator: "knowledge_title_input"
+      action: "fill"
+      param: "{title}"
+    - locator: "knowledge_content_input"
+      action: "fill"
+      param: "{content}"
+    - locator: "save_button"
+      action: "click"
+  
+  search_knowledge:
+    - locator: "search_input"
+      action: "fill"
+      param: "{keyword}"
+    - locator: "search_button"
+      action: "click"
+  
+  delete_knowledge:
+    - locator: "delete_button"
+      action: "click"
+    - locator: "confirm_yes"
+      action: "click"
