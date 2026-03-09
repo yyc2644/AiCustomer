@@ -206,3 +206,300 @@
 2026-03-06 12:00:19 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
 2026-03-06 12:00:19 - data.data_loader - INFO - [data_loader.py:223] - load_corpus_by_name() - 加载语料文件: data/corpus/test_corpus.csv, 共 15 条
 2026-03-06 12:00:19 - lib.api_client - INFO - [api_client.py:444] - close() - API客户端会话已关闭
+2026-03-09 10:46:37 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:46:38 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:46:38 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:46:38 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:46:38 - data.data_loader - INFO - [data_loader.py:223] - load_corpus_by_name() - 加载语料文件: data/corpus/test_corpus.csv, 共 15 条
+2026-03-09 10:46:38 - data.data_loader - ERROR - [data_loader.py:67] - load_csv() - 文件不存在: C:\Users\ZhanYi\PycharmProjects\AiCustomer\data\corpus\not_exist_file.csv
+2026-03-09 10:46:38 - data.data_loader - ERROR - [data_loader.py:92] - load_jsonl() - 文件不存在: C:\Users\ZhanYi\PycharmProjects\AiCustomer\data\corpus\not_exist_file.jsonl
+2026-03-09 10:46:38 - data.data_loader - ERROR - [data_loader.py:170] - load_excel() - 文件不存在: C:\Users\ZhanYi\PycharmProjects\AiCustomer\data\corpus\not_exist_file.xlsx
+2026-03-09 10:46:38 - data.data_loader - ERROR - [data_loader.py:170] - load_excel() - 文件不存在: C:\Users\ZhanYi\PycharmProjects\AiCustomer\data\corpus\not_exist_file.xls
+2026-03-09 10:46:38 - data.data_loader - ERROR - [data_loader.py:226] - load_corpus_by_name() - 未找到语料文件: not_exist_file
+2026-03-09 10:46:38 - data.data_loader - INFO - [data_loader.py:249] - load_all_corpus() - 共加载语料 30 条
+2026-03-09 10:46:38 - data.data_loader - ERROR - [data_loader.py:145] - load_yaml() - 文件不存在: C:\Users\ZhanYi\PycharmProjects\AiCustomer\data\behavior_cases\not_exist.yaml
+2026-03-09 10:46:38 - data.data_loader - INFO - [data_loader.py:315] - load_all_behavior_cases() - 共加载行为树用例 3 个
+2026-03-09 10:46:38 - data.data_loader - INFO - [data_loader.py:354] - load_ui_locators_by_name() - 加载UI定位器: data/ui/chat_window.yaml
+2026-03-09 10:46:38 - data.data_loader - INFO - [data_loader.py:381] - load_all_ui_locators() - 共加载UI定位器 2 个页面
+2026-03-09 10:46:38 - data.data_loader - ERROR - [data_loader.py:128] - load_json() - 加载JSON文件失败: Expecting value: line 1 column 1 (char 0)
+2026-03-09 10:46:38 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:46:38 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:46:38 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:46:38 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:46:38 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:46:38 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:46:38 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:46:38 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:46:38 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:46:38 - data.data_loader - INFO - [data_loader.py:223] - load_corpus_by_name() - 加载语料文件: data/corpus/test_corpus.csv, 共 15 条
+2026-03-09 10:46:38 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:46:38 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:46:38 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:46:38 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:46:38 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:46:38 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:46:38 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:46:38 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:46:38 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:46:38 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:46:38 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:46:38 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:46:38 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: 95d55a51-2d5
+2026-03-09 10:46:38 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:46:38 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: test_user
+2026-03-09 10:46:38 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:46:38 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: user1
+2026-03-09 10:46:38 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: user2
+2026-03-09 10:46:38 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:46:38 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: fbfc4aeb-64f
+2026-03-09 10:46:38 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:46:38 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: 0625c043-881
+2026-03-09 10:46:38 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:46:38 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: user1
+2026-03-09 10:46:38 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: user2
+2026-03-09 10:46:38 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:46:38 - lib.db_manager - INFO - [db_manager.py:72] - __init__() - 数据库管理器初始化完成，环境: test
+2026-03-09 10:46:38 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:46:38 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:46:38 - lib.db_manager - INFO - [db_manager.py:72] - __init__() - 数据库管理器初始化完成，环境: test
+2026-03-09 10:46:38 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: f0e7747e-c61
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: f17eb48e-733
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: c6fa3c54-1ac
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: e5232b81-722
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:47:31 - core.tree_parser - INFO - [tree_parser.py:180] - load_tree() - 成功加载行为树: base/en, 共 25 个节点
+2026-03-09 10:47:31 - core.tree_parser - INFO - [tree_parser.py:180] - load_tree() - 成功加载行为树: base/en, 共 25 个节点
+2026-03-09 10:47:31 - core.tree_parser - INFO - [tree_parser.py:180] - load_tree() - 成功加载行为树: base/en, 共 25 个节点
+2026-03-09 10:47:31 - core.tree_parser - INFO - [tree_parser.py:180] - load_tree() - 成功加载行为树: base/en, 共 25 个节点
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: 1bda9fd4-3e7
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: 6135ebd9-828
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: ac345e50-b1e
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: 47180b28-5a6
+2026-03-09 10:47:31 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:47:31 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:47:31 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:47:31 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:47:31 - data.data_loader - INFO - [data_loader.py:223] - load_corpus_by_name() - 加载语料文件: data/corpus/test_corpus.csv, 共 15 条
+2026-03-09 10:47:31 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:47:31 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:47:31 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:47:31 - data.data_loader - INFO - [data_loader.py:223] - load_corpus_by_name() - 加载语料文件: data/corpus/test_corpus.csv, 共 15 条
+2026-03-09 10:47:31 - lib.api_client - INFO - [api_client.py:444] - close() - API客户端会话已关闭
+2026-03-09 10:48:58 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:49:12 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:49:12 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:49:12 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:49:12 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:49:12 - data.data_loader - INFO - [data_loader.py:223] - load_corpus_by_name() - 加载语料文件: data/corpus/test_corpus.csv, 共 15 条
+2026-03-09 10:49:12 - data.data_loader - ERROR - [data_loader.py:67] - load_csv() - 文件不存在: C:\Users\ZhanYi\PycharmProjects\AiCustomer\data\corpus\not_exist_file.csv
+2026-03-09 10:49:12 - data.data_loader - ERROR - [data_loader.py:92] - load_jsonl() - 文件不存在: C:\Users\ZhanYi\PycharmProjects\AiCustomer\data\corpus\not_exist_file.jsonl
+2026-03-09 10:49:12 - data.data_loader - ERROR - [data_loader.py:170] - load_excel() - 文件不存在: C:\Users\ZhanYi\PycharmProjects\AiCustomer\data\corpus\not_exist_file.xlsx
+2026-03-09 10:49:12 - data.data_loader - ERROR - [data_loader.py:170] - load_excel() - 文件不存在: C:\Users\ZhanYi\PycharmProjects\AiCustomer\data\corpus\not_exist_file.xls
+2026-03-09 10:49:12 - data.data_loader - ERROR - [data_loader.py:226] - load_corpus_by_name() - 未找到语料文件: not_exist_file
+2026-03-09 10:49:12 - data.data_loader - INFO - [data_loader.py:249] - load_all_corpus() - 共加载语料 30 条
+2026-03-09 10:49:12 - data.data_loader - ERROR - [data_loader.py:145] - load_yaml() - 文件不存在: C:\Users\ZhanYi\PycharmProjects\AiCustomer\data\behavior_cases\not_exist.yaml
+2026-03-09 10:49:12 - data.data_loader - INFO - [data_loader.py:315] - load_all_behavior_cases() - 共加载行为树用例 3 个
+2026-03-09 10:49:12 - data.data_loader - INFO - [data_loader.py:354] - load_ui_locators_by_name() - 加载UI定位器: data/ui/chat_window.yaml
+2026-03-09 10:49:12 - data.data_loader - INFO - [data_loader.py:381] - load_all_ui_locators() - 共加载UI定位器 2 个页面
+2026-03-09 10:49:12 - data.data_loader - ERROR - [data_loader.py:128] - load_json() - 加载JSON文件失败: Expecting value: line 1 column 1 (char 0)
+2026-03-09 10:49:12 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:49:12 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:49:12 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:49:12 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:49:12 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:49:12 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:49:12 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:49:12 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:49:12 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:49:12 - data.data_loader - INFO - [data_loader.py:223] - load_corpus_by_name() - 加载语料文件: data/corpus/test_corpus.csv, 共 15 条
+2026-03-09 10:49:12 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:49:12 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:49:12 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:49:12 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:49:12 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:49:12 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:49:12 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:49:12 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:49:12 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:49:12 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:49:12 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:49:12 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:49:12 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: a6a62d38-a82
+2026-03-09 10:49:12 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:49:12 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: test_user
+2026-03-09 10:49:12 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:49:12 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: user1
+2026-03-09 10:49:12 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: user2
+2026-03-09 10:49:12 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:49:12 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: c768a0ff-36f
+2026-03-09 10:49:12 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:49:12 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: cadc5ee9-4ea
+2026-03-09 10:49:12 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:49:12 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: user1
+2026-03-09 10:49:12 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: user2
+2026-03-09 10:49:12 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:49:12 - lib.db_manager - INFO - [db_manager.py:72] - __init__() - 数据库管理器初始化完成，环境: test
+2026-03-09 10:49:12 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:49:12 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:49:12 - lib.db_manager - INFO - [db_manager.py:72] - __init__() - 数据库管理器初始化完成，环境: test
+2026-03-09 10:49:12 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:49:12 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:49:12 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:49:13 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:49:13 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:49:13 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:49:13 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:49:13 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:49:13 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:49:13 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:49:13 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: 293dc329-149
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: 7f304e12-030
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: 1a08fbce-f8a
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: b26e99d8-056
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:49:18 - core.tree_parser - INFO - [tree_parser.py:180] - load_tree() - 成功加载行为树: base/en, 共 25 个节点
+2026-03-09 10:49:18 - core.tree_parser - INFO - [tree_parser.py:180] - load_tree() - 成功加载行为树: base/en, 共 25 个节点
+2026-03-09 10:49:18 - core.tree_parser - INFO - [tree_parser.py:180] - load_tree() - 成功加载行为树: base/en, 共 25 个节点
+2026-03-09 10:49:18 - core.tree_parser - INFO - [tree_parser.py:180] - load_tree() - 成功加载行为树: base/en, 共 25 个节点
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: c9d33851-687
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: aad7c925-648
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: 8d82af95-9cd
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: 8e873774-5df
+2026-03-09 10:49:18 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:49:18 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:49:18 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:49:18 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:49:18 - data.data_loader - INFO - [data_loader.py:223] - load_corpus_by_name() - 加载语料文件: data/corpus/test_corpus.csv, 共 15 条
+2026-03-09 10:49:18 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:49:18 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:49:18 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:49:18 - data.data_loader - INFO - [data_loader.py:223] - load_corpus_by_name() - 加载语料文件: data/corpus/test_corpus.csv, 共 15 条
+2026-03-09 10:49:18 - lib.api_client - INFO - [api_client.py:444] - close() - API客户端会话已关闭
+2026-03-09 10:50:28 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:50:28 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:50:28 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:50:28 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:50:28 - data.data_loader - INFO - [data_loader.py:223] - load_corpus_by_name() - 加载语料文件: data/corpus/test_corpus.csv, 共 15 条
+2026-03-09 10:50:28 - data.data_loader - ERROR - [data_loader.py:67] - load_csv() - 文件不存在: C:\Users\ZhanYi\PycharmProjects\AiCustomer\data\corpus\not_exist_file.csv
+2026-03-09 10:50:28 - data.data_loader - ERROR - [data_loader.py:92] - load_jsonl() - 文件不存在: C:\Users\ZhanYi\PycharmProjects\AiCustomer\data\corpus\not_exist_file.jsonl
+2026-03-09 10:50:28 - data.data_loader - ERROR - [data_loader.py:170] - load_excel() - 文件不存在: C:\Users\ZhanYi\PycharmProjects\AiCustomer\data\corpus\not_exist_file.xlsx
+2026-03-09 10:50:28 - data.data_loader - ERROR - [data_loader.py:170] - load_excel() - 文件不存在: C:\Users\ZhanYi\PycharmProjects\AiCustomer\data\corpus\not_exist_file.xls
+2026-03-09 10:50:28 - data.data_loader - ERROR - [data_loader.py:226] - load_corpus_by_name() - 未找到语料文件: not_exist_file
+2026-03-09 10:50:28 - data.data_loader - INFO - [data_loader.py:249] - load_all_corpus() - 共加载语料 30 条
+2026-03-09 10:50:28 - data.data_loader - ERROR - [data_loader.py:145] - load_yaml() - 文件不存在: C:\Users\ZhanYi\PycharmProjects\AiCustomer\data\behavior_cases\not_exist.yaml
+2026-03-09 10:50:28 - data.data_loader - INFO - [data_loader.py:315] - load_all_behavior_cases() - 共加载行为树用例 3 个
+2026-03-09 10:50:28 - data.data_loader - INFO - [data_loader.py:354] - load_ui_locators_by_name() - 加载UI定位器: data/ui/chat_window.yaml
+2026-03-09 10:50:28 - data.data_loader - INFO - [data_loader.py:381] - load_all_ui_locators() - 共加载UI定位器 2 个页面
+2026-03-09 10:50:28 - data.data_loader - ERROR - [data_loader.py:128] - load_json() - 加载JSON文件失败: Expecting value: line 1 column 1 (char 0)
+2026-03-09 10:50:29 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:50:29 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:50:29 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:50:29 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:50:29 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:50:29 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:50:29 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:50:29 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:50:29 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:50:29 - data.data_loader - INFO - [data_loader.py:223] - load_corpus_by_name() - 加载语料文件: data/corpus/test_corpus.csv, 共 15 条
+2026-03-09 10:50:29 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:50:29 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:50:29 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:50:29 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test
+2026-03-09 10:50:29 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:50:29 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:50:29 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:50:29 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:50:29 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:50:29 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:50:29 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:50:29 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:50:29 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: fc358b10-7f7
+2026-03-09 10:50:29 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:50:29 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: test_user
+2026-03-09 10:50:29 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:50:29 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: user1
+2026-03-09 10:50:29 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: user2
+2026-03-09 10:50:29 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:50:29 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: 16bfea75-9a7
+2026-03-09 10:50:29 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:50:29 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: 6ced8831-098
+2026-03-09 10:50:29 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:50:29 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: user1
+2026-03-09 10:50:29 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: user2
+2026-03-09 10:50:29 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:50:29 - lib.db_manager - INFO - [db_manager.py:72] - __init__() - 数据库管理器初始化完成，环境: test
+2026-03-09 10:50:29 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:50:29 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:50:29 - lib.db_manager - INFO - [db_manager.py:72] - __init__() - 数据库管理器初始化完成，环境: test
+2026-03-09 10:50:29 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:50:29 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:50:29 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:50:29 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:50:29 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:50:29 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:50:29 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:50:29 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:50:29 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:50:29 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:50:29 - lib.api_client - INFO - [api_client.py:82] - __init__() - API客户端初始化完成，环境: test, URL: https://test-api.zhizhi168.com/#/home
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: e6c39bea-00a
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: 04196610-a3a
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: 117a116b-bad
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: 7c6cf89f-6f5
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:50:34 - core.tree_parser - INFO - [tree_parser.py:180] - load_tree() - 成功加载行为树: base/en, 共 25 个节点
+2026-03-09 10:50:34 - core.tree_parser - INFO - [tree_parser.py:180] - load_tree() - 成功加载行为树: base/en, 共 25 个节点
+2026-03-09 10:50:34 - core.tree_parser - INFO - [tree_parser.py:180] - load_tree() - 成功加载行为树: base/en, 共 25 个节点
+2026-03-09 10:50:34 - core.tree_parser - INFO - [tree_parser.py:180] - load_tree() - 成功加载行为树: base/en, 共 25 个节点
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: 47c11bf8-90d
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: eb2ebf74-d2c
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: 1f212b46-2d3
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:124] - __init__() - 机器人模拟器初始化完成
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:151] - create_session() - 创建会话: 892b2fc4-364
+2026-03-09 10:50:34 - lib.bot_simulator - INFO - [bot_simulator.py:519] - clear_sessions() - 所有会话已清除
+2026-03-09 10:50:34 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:50:34 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:50:34 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:50:34 - data.data_loader - INFO - [data_loader.py:223] - load_corpus_by_name() - 加载语料文件: data/corpus/test_corpus.csv, 共 15 条
+2026-03-09 10:50:34 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:50:34 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:50:34 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
+2026-03-09 10:50:34 - data.data_loader - INFO - [data_loader.py:223] - load_corpus_by_name() - 加载语料文件: data/corpus/test_corpus.csv, 共 15 条
+2026-03-09 10:50:34 - lib.api_client - INFO - [api_client.py:444] - close() - API客户端会话已关闭
