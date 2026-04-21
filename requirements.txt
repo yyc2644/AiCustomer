@@ -32,3 +32,11 @@ langchain==0.2.17
 langchain-core==0.2.43 
 langchain-openai==0.1.25 
 langchain-text-splitters==0.2.4 
+open_clip_torch>=2.24.0
+torch
+torchvision
+numpy
+pillow
+opencv-python
+faiss-cpu
+safetensors

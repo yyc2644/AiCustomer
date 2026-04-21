@@ -104,7 +104,7 @@ class ChatSession:
 class BotSimulator:
     """机器人模拟器"""
     
-    def __init__(self, api_client=None, config: Dict = None):
+    def __init__(self, api_client=None, config: Dict | None = None):
         """
         初始化模拟器
         
@@ -123,7 +123,7 @@ class BotSimulator:
         
         logger.info("机器人模拟器初始化完成")
     
-    def create_session(self, session_id: str = None, user_id: str = "",
+    def create_session(self, session_id: str| None = None, user_id: str = "",
                      language: str = "zh-CN") -> ChatSession:
         """
         创建新会话
@@ -163,8 +163,8 @@ class BotSimulator:
             return True
         return False
     
-    def chat(self, message: str, session_id: str = None,
-            context: Dict = None) -> Dict:
+    def chat(self, message: str, session_id: str | None= None,
+            context: Dict| None = None) -> Dict:
         """
         单轮对话
         
@@ -248,8 +248,8 @@ class BotSimulator:
                 "error": str(e)
             }
     
-    def chat_flow(self, messages: List[str], session_id: str = None,
-                 context: Dict = None) -> Dict:
+    def chat_flow(self, messages: List[str], session_id: str | None= None,
+                 context: Dict| None = None) -> Dict:
         """
         多轮对话流程
         
@@ -288,7 +288,7 @@ class BotSimulator:
         }
     
     def test_corpus(self, corpus_data: List[Dict],
-                   progress_callback: Callable = None) -> List[Dict]:
+                   progress_callback: Callable | None= None) -> List[Dict]:
         """
         使用语料库进行批量测试
         
@@ -486,7 +486,7 @@ class BotSimulator:
     # 工具方法
     # ============================================
     
-    def export_history(self, session_id: str = None,
+    def export_history(self, session_id: str | None = None,
                       format: str = "json") -> str:
         """
         导出会话历史

@@ -51,7 +51,7 @@ class DBConfig:
 class DBManager:
     """数据库管理器"""
     
-    def __init__(self, env: str = "test", config: Dict = None):
+    def __init__(self, env: str = "test", config: Dict | None = None):
         """
         初始化数据库管理器
         
@@ -132,7 +132,7 @@ class DBManager:
     def get_connection(self):
         """获取数据库连接（上下文管理器）"""
         try:
-            if not self._connection or not self._connection.open:
+            if not self._connection or not self._connection.open:# type: ignore
                 self.connect()
             yield self
         finally:
@@ -142,7 +142,7 @@ class DBManager:
     # 基础操作
     # ============================================
     
-    def execute(self, sql: str, params: Tuple = None) -> int:
+    def execute(self, sql: str, params: Tuple| None = None) -> int:
         """
         执行SQL语句
         
@@ -158,19 +158,19 @@ class DBManager:
         
         try:
             if params:
-                self._cursor.execute(sql, params)
+                self._cursor.execute(sql, params) # type: ignore
             else:
-                self._cursor.execute(sql)
+                self._cursor.execute(sql)# type: ignore
             
-            self._connection.commit()
-            return self._cursor.rowcount
+            self._connection.commit()# type: ignore
+            return self._cursor.rowcount# type: ignore
             
         except Exception as e:
-            self._connection.rollback()
+            self._connection.rollback()# type: ignore
             logger.error(f"执行SQL失败: {e}, SQL: {sql}")
             raise
     
-    def query(self, sql: str, params: Tuple = None) -> List[Dict]:
+    def query(self, sql: str, params: Tuple| None = None) -> List[Dict]:
         """
         查询数据
         
@@ -186,22 +186,22 @@ class DBManager:
         
         try:
             if params:
-                self._cursor.execute(sql, params)
+                self._cursor.execute(sql, params)# type: ignore
             else:
-                self._cursor.execute(sql)
+                self._cursor.execute(sql)# type: ignore
             
-            results = self._cursor.fetchall()
+            results = self._cursor.fetchall()# type: ignore
             
             # 转换为字典
             if results and hasattr(results[0], 'keys'):
                 return [dict(row) for row in results]
-            return results
+            return results# type: ignore
             
         except Exception as e:
             logger.error(f"查询失败: {e}, SQL: {sql}")
             raise
     
-    def query_one(self, sql: str, params: Tuple = None) -> Optional[Dict]:
+    def query_one(self, sql: str, params: Tuple| None = None) -> Optional[Dict]:
         """查询单条数据"""
         results = self.query(sql, params)
         return results[0] if results else None
@@ -221,12 +221,12 @@ class DBManager:
             self.connect()
         
         try:
-            self._cursor.executemany(sql, params_list)
-            self._connection.commit()
-            return self._cursor.rowcount
+            self._cursor.executemany(sql, params_list)# type: ignore
+            self._connection.commit()# type: ignore
+            return self._cursor.rowcount# type: ignore
             
         except Exception as e:
-            self._connection.rollback()
+            self._connection.rollback()# type: ignore
             logger.error(f"批量执行失败: {e}")
             raise
     
@@ -253,7 +253,7 @@ class DBManager:
         
         # 获取插入ID
         if hasattr(self._cursor, 'lastrowid'):
-            return self._cursor.lastrowid
+            return self._cursor.lastrowid# type: ignore
         return 0
     
     def batch_insert(self, table: str, data_list: List[Dict]) -> int:
@@ -278,7 +278,7 @@ class DBManager:
         return self.batch_execute(sql, params_list)
     
     def update(self, table: str, data: Dict, where: str, 
-              where_params: Tuple = None) -> int:
+              where_params: Tuple| None = None) -> int:
         """
         更新数据
 
@@ -301,7 +301,7 @@ class DBManager:
         return self.execute(sql, params)
     
     def delete(self, table: str, where: str, 
-              where_params: Tuple = None) -> int:
+              where_params: Tuple| None = None) -> int:
         """
         删除数据
         
@@ -320,7 +320,7 @@ class DBManager:
     # 业务相关方法
     # ============================================
     
-    def get_conversations(self, user_id: str = None, status: str = None,
+    def get_conversations(self, user_id: str | None = None, status: str | None = None,
                          limit: int = 100) -> List[Dict]:
         """
         获取会话列表
@@ -346,7 +346,7 @@ class DBManager:
         
         sql += f" ORDER BY created_at DESC LIMIT {limit}"
         
-        return self.query(sql, tuple(params) if params else None)
+        return self.query(sql, tuple(params) if params else None) # type: ignore
     
     def get_conversation_messages(self, conversation_id: str) -> List[Dict]:
         """获取会话消息"""
@@ -357,8 +357,7 @@ WHERE conversation_id = %s
         """
         return self.query(sql, (conversation_id,))
     
-    def get_knowledge_list(self, category: str = None, 
-                          keyword: str = None, limit: int = 100) -> List[Dict]:
+    def get_knowledge_list(self, category: str | None = None, keyword: str | None = None, limit: int = 100) -> List[Dict]:
         """获取知识库列表"""
         sql = "SELECT * FROM knowledge_base WHERE 1=1"
         params = []
@@ -400,7 +399,7 @@ WHERE conversation_id = %s
     # 测试数据管理
     # ============================================
     
-    def create_test_user(self, user_id: str = None) -> Dict:
+    def create_test_user(self, user_id: str | None = None) -> Dict:
         """创建测试用户"""
         import uuid
         
