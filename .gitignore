@@ -6,8 +6,9 @@ __pycache__/
 *.DS_Store
 
 # 虚拟环境
-.venv/
-venv/
+./.venv/
+/.venv/
+/venv/
 
 # 大文件（应该用 Git LFS 或忽略）
 *.safetensors
