@@ -142,7 +142,7 @@ class TestCorpusEvaluation:
     
     def test_evaluation_stats(self, evaluator):
         """测试评估统计"""
-        from core.evaluator import EvaluationResult
+        from src.core.evaluator import EvaluationResult
         
         results = [
             EvaluationResult(

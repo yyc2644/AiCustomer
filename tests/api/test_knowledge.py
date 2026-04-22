@@ -28,7 +28,7 @@ class TestKnowledgeAPI:
     @patch('lib.api_client.requests.Session')
     def test_get_knowledge_list(self, mock_session):
         """测试获取知识库列表"""
-        from lib.api_client import APIClient
+        from src.lib.api_client import APIClient
         
         # Mock响应
         mock_response = create_mock_response({
@@ -46,7 +46,7 @@ class TestKnowledgeAPI:
     @patch('lib.api_client.requests.Session')
     def test_add_knowledge(self, mock_session):
         """测试添加知识"""
-        from lib.api_client import APIClient
+        from src.lib.api_client import APIClient
         
         # Mock响应
         mock_response = create_mock_response({"code": 0, "id": "12345"})
@@ -66,7 +66,7 @@ class TestKnowledgeAPI:
     @patch('lib.api_client.requests.Session')
     def test_update_knowledge(self, mock_session):
         """测试更新知识"""
-        from lib.api_client import APIClient
+        from src.lib.api_client import APIClient
         
         # Mock响应 - 先返回添加成功的ID，再返回更新成功
         mock_response = create_mock_response({"code": 0, "id": "12345"})
@@ -91,7 +91,7 @@ class TestKnowledgeAPI:
     @patch('lib.api_client.requests.Session')
     def test_delete_knowledge(self, mock_session):
         """测试删除知识"""
-        from lib.api_client import APIClient
+        from src.lib.api_client import APIClient
         
         # Mock响应
         mock_response = create_mock_response({"code": 0, "id": "12345"})
@@ -112,7 +112,7 @@ class TestKnowledgeAPI:
     @patch('lib.api_client.requests.Session')
     def test_search_knowledge(self, mock_session):
         """测试搜索知识"""
-        from lib.api_client import APIClient
+        from src.lib.api_client import APIClient
         
         # Mock响应
         mock_response = create_mock_response({"code": 0, "data": {"list": []}})
@@ -132,7 +132,7 @@ class TestConversationAPI:
     @patch('lib.api_client.requests.Session')
     def test_get_conversation_list(self, mock_session):
         """测试获取会话列表"""
-        from lib.api_client import APIClient
+        from src.lib.api_client import APIClient
         
         # Mock响应
         mock_response = create_mock_response({"code": 0, "data": {"list": []}})
@@ -147,7 +147,7 @@ class TestConversationAPI:
     @patch('lib.api_client.requests.Session')
     def test_send_message(self, mock_session):
         """测试发送消息"""
-        from lib.api_client import APIClient
+        from src.lib.api_client import APIClient
         
         # Mock响应
         mock_response = create_mock_response({
@@ -170,7 +170,7 @@ class TestConversationAPI:
     @patch('lib.api_client.requests.Session')
     def test_chat_flow(self, mock_session):
         """测试对话流程"""
-        from lib.api_client import APIClient
+        from src.lib.api_client import APIClient
         
         # Mock响应
         mock_response = create_mock_response({
@@ -193,7 +193,7 @@ class TestConversationAPI:
     @patch('lib.api_client.requests.Session')
     def test_get_chat_history(self, mock_session):
         """测试获取聊天历史"""
-        from lib.api_client import APIClient
+        from src.lib.api_client import APIClient
         
         # Mock响应 - 第一次发送消息，第二次获取历史
         mock_response = create_mock_response({
@@ -222,7 +222,7 @@ class TestStatisticsAPI:
     @patch('lib.api_client.requests.Session')
     def test_get_statistics(self, mock_session):
         """测试获取统计数据"""
-        from lib.api_client import APIClient
+        from src.lib.api_client import APIClient
         from datetime import datetime, timedelta
         
         # Mock响应

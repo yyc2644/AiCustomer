@@ -34,14 +34,14 @@ def pytest_configure(config):
 @pytest.fixture(scope="session")
 def config():
     """全局配置fixture"""
-    from config.config_loader import get_config
+    from src.config.config_loader import get_config
     return get_config()
 
 
 @pytest.fixture(scope="session")
 def api_client(config):
     """API客户端fixture"""
-    from lib.api_client import APIClient
+    from src.lib.api_client import APIClient
     client = APIClient(env="test")
     yield client
     client.close()
@@ -50,7 +50,7 @@ def api_client(config):
 @pytest.fixture(scope="session")
 def db_manager(config):
     """数据库管理器fixture"""
-    from lib.db_manager import DBManager
+    from src.lib.db_manager import DBManager
     db = DBManager(env="test")
     yield db
     db.close()
@@ -59,7 +59,7 @@ def db_manager(config):
 @pytest.fixture
 def bot_simulator(api_client):
     """机器人模拟器fixture"""
-    from lib.bot_simulator import BotSimulator
+    from src.lib.bot_simulator import BotSimulator
     simulator = BotSimulator(api_client)
     yield simulator
     simulator.clear_sessions()
@@ -68,14 +68,14 @@ def bot_simulator(api_client):
 @pytest.fixture
 def evaluator(config):
     """评估器fixture"""
-    from core.evaluator import Evaluator
+    from src.core.evaluator import Evaluator
     return Evaluator(config)
 
 
 @pytest.fixture
 def tree_parser():
     """行为树解析器fixture"""
-    from core.tree_parser import TreeParser
+    from src.core.tree_parser import TreeParser
     return TreeParser()
 
 

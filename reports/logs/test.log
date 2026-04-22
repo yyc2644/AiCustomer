@@ -503,3 +503,4 @@
 2026-03-09 10:50:34 - core.evaluator - WARNING - [evaluator.py:115] - _load_embedding_model() - sentence-transformers未安装，使用备选方案
 2026-03-09 10:50:34 - data.data_loader - INFO - [data_loader.py:223] - load_corpus_by_name() - 加载语料文件: data/corpus/test_corpus.csv, 共 15 条
 2026-03-09 10:50:34 - lib.api_client - INFO - [api_client.py:444] - close() - API客户端会话已关闭
+2026-04-22 15:17:36 - root - INFO - [config_loader.py:74] - __init__() - 配置加载完成，当前环境: test

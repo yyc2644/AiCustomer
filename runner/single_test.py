@@ -1,5 +1,5 @@
 # from core.adapter.openai_adapter import OpenAIAdapter
-from tools.simple_websocket import websocket
+from src.tools.simple_websocket import websocket
 def single_test(test):
     adapter = OpenAIAdapter()
 

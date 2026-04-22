@@ -1,8 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+# 虚拟环境
+.venv/
+venv/
+
+# 大文件（应该用 Git LFS 或忽略）
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# 敏感文件
+*.json
+!package.json
+.env
+googlekey.json
+Key.json
+
+# 测试和临时文件
+/playground/
+/tests/
+*.log
+*.xls
+*.xlsx
+*.jpg
+*.png
+
+# IDE
+.vscode/
+.idea/
+
 /model/
-/BehaviorTree/en.xls
-/BehaviorTree/hi.xls
 /config/env.yaml
 /BehaviorTree/base/
 /BehaviorTree/ComeIndia/
-/.venv/
+
 /ocr_test/
+/nvidia/demo.py

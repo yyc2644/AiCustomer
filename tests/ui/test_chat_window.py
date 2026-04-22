@@ -23,7 +23,7 @@ class TestChatWindowUI:
     @pytest.fixture
     def chat_page(self, mock_driver):
         """聊天页面对象"""
-        from lib.page_objects.base import BasePage
+        from src.lib.page_objects.base import BasePage
         from lib.page_objects import ChatPage
         
         with patch('lib.page_objects.base.BasePage._find_by_locator'):
@@ -99,7 +99,7 @@ class TestUIElements:
     
     def test_locator_creation(self):
         """测试定位器创建"""
-        from lib.page_objects.base import Locator, LocatorHelper
+        from src.lib.page_objects.base import Locator, LocatorHelper
         
         # 测试CSS定位器
         locator = LocatorHelper.css("#input-box", "输入框")
@@ -113,7 +113,7 @@ class TestUIElements:
     
     def test_page_object_inheritance(self):
         """测试页面对象继承"""
-        from lib.page_objects.base import BasePage
+        from src.lib.page_objects.base import BasePage
         
         class TestPage(BasePage):
             pass

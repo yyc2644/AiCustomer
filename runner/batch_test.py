@@ -2,8 +2,8 @@
 批量测试运行器
 """
 
-from core.utils import load_testcases
-from core.evaluator import Evaluator
+from src.core.utils import load_testcases
+from src.core.evaluator import Evaluator
 from pathlib import Path
 import json
 
