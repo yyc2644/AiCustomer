@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *.so
 .Python
+*.DS_Store
 
 # 虚拟环境
 .venv/
