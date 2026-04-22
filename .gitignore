@@ -4,3 +4,5 @@
 /config/env.yaml
 /BehaviorTree/base/
 /BehaviorTree/ComeIndia/
+/.venv/
+/ocr_test/
